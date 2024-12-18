@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: No Index Forever (Almost)
- * Plugin URI:  https://example.com/
+ * Plugin URI:  https://kissplugins.com
  * Description: Ensures that search engines are always discouraged from indexing this site by checking and resetting the "Discourage search engines" setting every hour.
  * Version:     1.0.0
  * Author:      Hypercart
