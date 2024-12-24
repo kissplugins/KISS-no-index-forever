@@ -3,7 +3,7 @@
  * Plugin Name: KISS - No Index Forever (Almost)
  * Plugin URI:  https://kissplugins.com
  * Description: Ensures that search engines are always discouraged from indexing this site by checking and resetting the "Discourage search engines" setting every hour.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Hypercart
  * Author URI:  https://kissplugins.com
  * License:     GPLv2 or later
@@ -14,6 +14,17 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
+
+// Include the Plugin Update Checker
+require plugin_dir_path(__FILE__) . 'lib/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/kissplugins/KISS-no-index-forever',
+    __FILE__,
+    'no-index-forever-almost'
+);
+// Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
 
 class No_Index_Forever_Almost {
 
