@@ -51,3 +51,9 @@ If you ever need to allow search engines again, simply deactivate or uninstall t
 
 This plugin is open source and licensed under the GPLv2 or later license.  
 For more details, see: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+
+**Follow Us on Blue Sky:**
+https://bsky.app/profile/kissplugins.bsky.social
+
+© Copyright Hypercart D.B.A. Neochrome, Inc.
+
