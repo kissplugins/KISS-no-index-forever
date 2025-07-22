@@ -1,56 +1,103 @@
 # KISS - No Index Forever (Almost)
 
-**Contributors:** Hypercart  
-**Donate link:** https://kissplugins.com  
-**Tags:** discourage, indexing, search engines, SEO  
-**Requires at least:** 4.6  
-**Tested up to:** 6.3  
-**Stable tag:** 1.0.1  
-**License:** GPLv2 or later  
-**License URI:** https://www.gnu.org/licenses/gpl-2.0.html
+**KISS = Keep It Simple (Stupid)** Plugins are designed to do one thing only. And we believe that one thing should be done very well.
 
-## Description
+The **KISS - No Index Forever (Almost)** plugin has no upsells or freemium limitations. It's small, effective, and does what it promises.
 
-The **KISS - No Index Forever (Almost)** plugin ensures that search engines are always discouraged from indexing your WordPress site. It checks the "Discourage search engines from indexing this site" setting every hour, and if it's not set correctly, the plugin resets it so that search engines are discouraged.
+---
+
+## ✅ What It Does
+
+This plugin ensures that WordPress’s **"Discourage search engines from indexing this site"** setting is always turned on — **forever (almost)**.
+
+It checks the setting **every hour**, and if anything tries to override it, the plugin resets it. Perfect for:
+
+- Development sites
+- Staging environments
+- Client preview sites
+- Internal company portals
+
+---
+
+## Descriptions
+
+The KISS - No Index Forever (Almost) plugin ensures that search engines are always discouraged from indexing your WordPress site. It checks the "Discourage search engines from indexing this site" setting every hour, and if it's not set correctly, the plugin resets it so that search engines are discouraged.
 
 This can be helpful for development, staging sites, or any scenario where you never want your site to be indexed by search engines.
 
-## Features
+## 🔌 Installation
 
-- Automatically enforces the `blog_public` option to discourage search engines from indexing your site.
-- Checks every hour using WordPress cron scheduling.
-- Adds a Settings page link from the plugin listing page for quick access.
+1. Download the `KISS No Index Forever (Almost)` plugin `.zip` file from [git repository](https://github.com/kissplugins/KISS-no-index-forever).
+2. In your WordPress admin dashboard, go to **Plugins > Add New**.
+3. Click **Upload Plugin** and upload the `.zip` file.
+4. Click **Activate Plugin** once uploaded.
 
-## Installation
+---
 
-1. Download the `kiss-no-index-forever-almost.zip` file and extract it.
-2. Upload the `kiss-no-index-forever-almost` folder to the `/wp-content/plugins/` directory of your WordPress installation.
-3. Activate the plugin through the 'Plugins' menu in WordPress.
-4. The plugin will immediately begin enforcing the "Discourage search engines" setting. No further configuration is required.
+## ⚙️ How It Works
 
-## Usage
+After activation:
 
-Once activated, the plugin automatically checks and resets the discourage search engines option every hour. You can access the plugin’s information page from **Settings > No Index Forever** in your WordPress admin dashboard. There are no additional settings to configure.
+- The plugin **checks every hour** (via WordPress cron) whether the `Discourage search engines` setting is still enabled.
+- If it's **disabled**, the plugin will **re-enable it automatically**.
+- You’ll find a reference screen under **Settings > No Index Forever** — no configuration needed.
 
-If you ever need to allow search engines again, simply deactivate or uninstall the plugin.
+To stop enforcement, simply **deactivate the plugin**.
 
-## Frequently Asked Questions
+---
 
-**Q:** Will this plugin block search engines from indexing my site immediately?  
-**A:** The plugin enforces the WordPress "Discourage search engines from indexing" setting. Actual indexing behavior depends on search engines respecting that directive. Typically, major search engines honor the directive, but we cannot guarantee full compliance from all crawlers.
+## ❓ Frequently Asked Questions
 
-**Q:** Can I override or temporarily disable the enforcement?  
-**A:** Yes. Simply deactivate the plugin to stop it from resetting the discourage search engines setting.
+**Q: Will this block all bots immediately?**  
+A: No plugin can guarantee that. But most major search engines honor the `Discourage indexing` flag set in WordPress. This plugin ensures that flag is always on.
 
-## Changelog
+**Q: Can I disable this temporarily?**  
+A: Yes. Just deactivate or delete the plugin — it stops resetting the setting.
+
+---
+
+## 🛠️ Features
+
+- 💡 Lightweight: No settings, no bloat.
+- 🔁 Hourly enforcement using native WordPress cron.
+- 🔒 Protects your staging or private site from accidental indexing.
+- 🧠 Simple — you activate it and it just works.
+
+---
+
+## 🛣️ Roadmap
+
+- Add toggle to auto-disable when moved to production
+- Optional alert if setting was overridden before reset
+- Add WP CLI command for manual enforcement
+
+---
+
+## 🧾 Changelog
 
 **1.0.1**  
-- Added Plugin update checker feature.
+- Added plugin update checker support.
 
 **1.0.0**  
 - Initial release.
 
-## License
+---
 
-This plugin is open source and licensed under the GPLv2 or later license.  
-For more details, see: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+## 🧪 License & Disclaimer
+
+This plugin is released under the **GPL v2 or later** license.  
+Use of the plugin is at your own risk and provided **as-is** without any warranties.
+
+Please first review the code and test on a Development/Staging server.
+
+📜 [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+
+---
+
+**Questions or Support?**  
+devops@kissplugins.com | noel@kissplugins.com
+
+**Follow Us on Blue Sky:**  
+https://bsky.app/profile/kissplugins.bsky.social
+
+© Copyright Hypercart D.B.A. Neochrome, Inc.
